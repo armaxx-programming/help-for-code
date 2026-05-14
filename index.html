@@ -1,84 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Help for Code</title>
- 
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h1>This is a page for learning a coding</h1>
+<title>TRAUB</title>
 
-<h1>for a web page it is necessary to know 3 pillars. "html", "CSS", "JavaScript".
+<style>
 
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
+html{
+    scroll-behavior:smooth;
+}
 
-<h2>what is html</h3>
-<h4>-html is a "function", the function to create web pages like this</h4>
-<h4>-in html you can put some functions in it like for example "a href=" which is used for links 
+body{
+    background:black;
+    color:white;
+    overflow-x:hidden;
+}
 
-(with a "<->" symbol at the beginning then close
+/* HERO (IMAGE PRINCIPALE) */
+.hero{
+    height:100vh;
+    background:url("Traub.jpeg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
 
-<p>you probably suspect that html will also need another function.</p>
+/* FILTRE NOIR SUR IMAGE */
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
 
+/* TEXTE HERO */
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    animation:fadeIn 1.8s ease;
+}
 
-<h2>it's true html also uses CSS for color</h2>
+.hero-content h1{
+    font-size:80px;
+    letter-spacing:12px;
+}
 
-exemple
- 
- <head>
-    <meta charset="UTF-8">
-    <title>Mon serveur Hack</title>
-    
-        <pre>
-        body {
-            background-color: white;
-            color: black;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        
-  
-<h2>After CSS there is JavaScript. JavaScript is for all behavior of our website, therefore interactions.</h2>
+.hero-content p{
+    margin-top:15px;
+    font-size:20px;
+    color:#cccccc;
+}
 
-<h2>what is JavaScript</h2>:
+/* SECTION INFOS */
+.info{
+    min-height:100vh;
+    padding:120px 10%;
+    background:#0d0d0d;
+}
 
-<h3>-JavaScript is the behavior manager</h3>
+.info h2{
+    font-size:50px;
+    margin-bottom:25px;
+}
 
-<h3>-we can make 3 types of module to click thanks to JavaScript on the website a module where we can click on play, option, how to play.</h3>
+.info p{
+    font-size:20px;
+    line-height:1.8;
+    color:#d0d0d0;
+    max-width:800px;
+}
 
-exemple:
+/* ANIMATION */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 
-<body>
-  
-  <h1>My games</h1>
+/* RESPONSIVE */
+@media (max-width:768px){
+    .hero-content h1{
+        font-size:50px;
+    }
 
-   button onclick="showSection('play')">Jouer  button
-   button onclick="showSection('options')">Options  button
-   button onclick="showSection('help')">Comment jouer  button
-   
-<h4>don't forget to open and close the buttons, I don't do it because otherwise the code executes</h4>
-  
-       
-<h1>Summary</h1>
+    .info h2{
+        font-size:35px;
+    }
 
-<h2>html is the tool to open a site, CSS is the tool to personalize your site and JavaScript is the tool to make your site interactive</h2>
+    .info p{
+        font-size:18px;
+    }
+}
 
-<h2>Don't tell yourself it's too hard, I won't be able to do it, I made this site even though it's only been 1 month since I really started and yet I did it without help, well yes just so that I can share the example with you I used an AI but otherwise you have to persevere</h2>
-
-
-<h3>some site to learn well: codecademy / W3School (that's what I created the site for you / CodePen is for practicing / freeCodeCamp is for learning and there are exercises.</h3>
-       
-       
-       
-       
-       </pre>
-   
-    </style>
+</style>
 </head>
 
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+    <h1>TRAUB</h1>
+    <p>BUILD • PUSH • ACHIEVE</p>
+</div>
+
+</section>
+
+<!-- INFOS -->
+<section class="info">
+
+<h2>À propos</h2>
+
+<p>
+Bienvenue sur TRAUB. 
+
+Ce site est conçu pour être simple, propre et efficace. Sur ceux site il y a de l'achat 
+
+</p>
+
+</section>
+<section class="info">
+
+<h2>À propos</h2>
+
+<p>
+Bienvenue sur TRAUB.
+
+Ici vous pouvez:
+-acheter
+-se faire remboursé
+-se faire conceiller sur le mail
 
 
+</p>
+
+</section>
+<body id="acceuil">
+
+<header>
+    <h1>Possibilité</h1>
+    <nav>
+        <a href="#top">Accueil</a>
+        <a href="#achat">Achat</a>
+        <>
+        <a href="#horrair d'appel ou message">Horrair d'appel ou message</a>
+    </nav>
+</header>
+
+<h2 id="achat">Achat</h2>
+<p>Zone d'achat</p>
 
 
+<p>Voici mes infos</p>
 
+Pour nous contacter vous pouvez:
+
+
+<h2 id="Horrair d'appel ou message">Horrair d'appel ou message</h2>
+
+
+<h4>pour les message sa sera sur nôtre Gmail / Mail<h4>
+armanthy4@gmail/com
+--
+<h4>Pour les Appelles voici les horrairs<h4>
+lundi = 17H - 21H
+mardi = 17H - 22H
+mercredi = 13H - 21H
+jeudi =17H - 21H
+vendedi = 17H - 22H
+
+<p>Vous pouvez téléphoner au " +33 7 49 96 97 59 "
 </body>
 </html>
